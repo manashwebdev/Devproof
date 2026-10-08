@@ -1,0 +1,16 @@
+{
+  "name": "devproof",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One platform to verify resume claims, compare resume versions and check project health.",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n server,client -c cyan,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+  "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "cross-env": "^10.1.0"
+  }
+}
