@@ -197,6 +197,53 @@ DevProof/
 
 ## ⚙️ Local Setup
 
+## 📖 Usage
+
+### Verify Resume Claims
+
+1. Open DevProof.
+2. Select **Verify Claims**.
+3. Enter a public GitHub username.
+4. Upload a resume PDF or provide resume text.
+5. Start the analysis.
+6. DevProof extracts skills from the resume and checks them against available GitHub project evidence.
+7. Review the resulting Trust Score and evidence levels for each claim.
+
+### Compare Resume Versions
+
+1. Open **Resume Diff**.
+2. Upload the older resume as the **Before** version.
+3. Upload the newer resume as the **After** version.
+4. Start the comparison.
+5. Review skills added, skills removed, and other changes between the two versions.
+
+### Analyze a GitHub Project
+
+1. Open **Project Health**.
+2. Enter a public GitHub repository in the format:
+   `owner/repository`
+3. Start the analysis.
+4. Review the project health score, documentation gaps, missing sections, and recommended improvements.
+
+### View Analysis History
+
+When MongoDB is configured, completed analyses can be stored in **History**.
+
+Open the **History** section to:
+
+* View previous analyses
+* Review saved results
+* Delete previous results
+
+## 🌐 Using the Live Demo
+
+You can use the deployed application directly without setting up the project locally:
+
+**https://devproof-eight.vercel.app/**
+
+The frontend communicates with the production Express API deployed on Render.
+
+
 ### Requirements
 
 * Node.js 18+
